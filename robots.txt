@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /umbraco/
+Disallow: /404/
+Disallow: /arama/
+Disallow: /*?page=
+Sitemap: https://korfezmenkul.com.tr/sitemap.xml
