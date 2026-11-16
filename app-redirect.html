@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Redirect</title>
+    <script>
+       function detectOSAndRedirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // iOS detection
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/us/app/tradeplus/id1360207568";  // iOS için yönlendirme
+            }
+            // Android detection
+            else if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.kuveytturk.mobileinvestment&pcampaignid=web_share";  // Android için yönlendirme
+            }
+            // Huawei detection (using Android)
+            else if (/huawei/i.test(userAgent)) {
+                window.location.href = "https://appgallery.huawei.com/#/app/C102710401";  // Huawei için yönlendirme
+            }
+            // Default or other OS
+            else {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.kuveytturk.mobileinvestment&pcampaignid=web_share";  // Diğer işletim sistemleri için yönlendirme
+            }
+        }
+
+        // Sayfa yüklendiğinde fonksiyonu çağır
+            window.onload = detectOSAndRedirect;
+    </script>
+</head>
+<body>
+    <p>Redirect...</p>
+
+    <a href="https://korfezmenkul.com.tr/">Go back to site</a>
+</body>
+</html>
