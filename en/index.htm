@@ -1710,14 +1710,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <form id="campaignForm" action="/umbraco/api/Form/SaveCampaignForm" method="post">
                         <input type="hidden" name="PageName" value="Home Page" />
                                 <div class="uk-margin uk-form-controls">
-                                        <input id="campaign-field-0"
-                                            name="NameSurname"
-                                            class="uk-input"
-                                            type="text"
-                                            placeholder="Full Name"
-                                            data-rule-required="true"
-                                            data-msg-required="Full Name is a required field."
-                                            data-msg-email="">
+                                        <input id="campaign-field-0" name="TCKN" class="uk-input" type="text" inputmode="numeric" autocomplete="off" maxlength="11" placeholder="Turkish ID Number" data-rule-required="true" data-rule-digits="true" data-rule-minlength="11" data-rule-maxlength="11" data-msg-required="ID number is a required field." data-msg-digits="ID number must contain digits only." data-msg-minlength="ID number must be 11 digits." data-msg-maxlength="ID number must be 11 digits." data-msg-email="" oninput="this.value=this.value.replace(/\D/g,'').slice(0,11)">
                                     <div class="uk-text-danger"></div>
                                 </div>
                                 <div class="uk-margin uk-form-controls">

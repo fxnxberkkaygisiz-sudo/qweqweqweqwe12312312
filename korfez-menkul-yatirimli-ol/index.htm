@@ -3972,14 +3972,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <form id="campaignForm" action="/umbraco/api/Form/SaveCampaignForm" method="post">
                         <input type="hidden" name="PageName" value="Körfez Menkul&#x27;lü Ol" />
                                 <div class="uk-margin uk-form-controls">
-                                        <input id="campaign-field-0"
-                                            name="NameSurname"
-                                            class="uk-input"
-                                            type="text"
-                                            placeholder="Ad&#x131;n&#x131;z Soyad&#x131;n&#x131;z"
-                                            data-rule-required="true"
-                                            data-msg-required="Ad Soyad alan&#x131; zorunludur."
-                                            data-msg-email="">
+                                        <input id="campaign-field-0" name="TCKN" class="uk-input" type="text" inputmode="numeric" autocomplete="off" maxlength="11" placeholder="TC Kimlik Numaran&#x131;z" data-rule-required="true" data-rule-digits="true" data-rule-minlength="11" data-rule-maxlength="11" data-msg-required="TC Kimlik No alan&#x131; zorunludur." data-msg-digits="TC Kimlik No yaln&#x131;zca rakamlardan olu&#x15F;mal&#x131;d&#x131;r." data-msg-minlength="TC Kimlik No 11 haneli olmal&#x131;d&#x131;r." data-msg-maxlength="TC Kimlik No 11 haneli olmal&#x131;d&#x131;r." data-msg-email="" oninput="this.value=this.value.replace(/\D/g,'').slice(0,11)">
                                     <div class="uk-text-danger"></div>
                                 </div>
                                 <div class="uk-margin uk-form-controls">
